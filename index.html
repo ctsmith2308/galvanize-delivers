@@ -24,29 +24,57 @@
     align-items: center;
   }
 
-  h1 {
+  .navigation>h1 {
     margin: 0;
   }
 
-  h5 {
+  .navigation>h3 {
     margin-left: 1000px;
   }
 
+  .heroImage {
+    background-image: url('./img/hero.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 500px;
+    text-align: center;
+  }
+
+.heroImage>h1{
+  color: red;
+  margin-top: 200px;
+
+}
+.heroImage>h3{
+  background-color: green;
+  color: pink;
+  padding: 3px;
+  margin: auto;
+  margin-left: 570px;
+  margin-right: 570px;
+}
 
 </style>
 
 <body class='container-fluid'>
-  <nav class='row'>
-    <div class='col-md-12 navigation'>
-      <h1>Galvanize Delivers</h1>
-      <h5>Home</h5>
-    </div>
-    <main class = 'row'>
-      <div clas = 'col-md-12 heroImage'>
-
+  <header>
+    <nav class='row'>
+      <div class='col-md-12 navigation'>
+        <h1>Galvanize Delivers</h1>
+        <h3>Home</h3>
       </div>
-    </main>
+    </nav>
+  </header>
+  <main>
+    <div class='row heroImage'>
+      <h1>Fine Dining Delivered</h1>
+      <h3>PLACE AN ORDER</h3>
 
-    </body>
+    </div>
+  </main>
+
+</body>
 
 </html>
