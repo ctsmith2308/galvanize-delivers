@@ -20,16 +20,16 @@
     background-color: blue;
     color: white;
     height: 75px;
-    display: flex;
-    align-items: center;
   }
 
   .navigation>h1 {
-    margin: 0;
+    float: left;
+    margin-top: 18px;
   }
 
   .navigation>h3 {
-    margin-left: 1000px;
+    float: right;
+    margin-top: 25px;
   }
 
   .heroImage {
@@ -43,6 +43,7 @@
   }
 
 .heroImage>h1{
+  font-size: 75px;
   color: red;
   margin-top: 200px;
 
@@ -52,8 +53,57 @@
   color: pink;
   padding: 3px;
   margin: auto;
-  margin-left: 570px;
-  margin-right: 570px;
+  max-width: 250px;
+  max-height: 100px;
+}
+
+.mybox {
+  border: 1px solid red;
+}
+
+.features{
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+}
+
+.firstFoot{
+  background-color: blue;
+  height: 100px;
+}
+
+.firstFoot>h3{
+  color: white;
+  border:2px solid red;
+}
+.firstFoot>h3{
+  /*margin-top: 25px;*/
+  border:2px solid red;
+}
+/*.firstFoot>p{
+  border:2px solid red;
+  margin-top: 25px;
+}*/
+
+.firstFoot>ul{
+  border:2px solid red;
+  margin-top: 25px;
+  list-style-type: none;
+  color:white;
+}
+
+.finalFooter{
+  color: red;
+  background-color: black;
+  height: 45px;
+}
+
+.finalFooter>small{
+  margin-top: 15px;
+  /*padding-bottom: 10px;*/
+
 }
 
 </style>
@@ -69,12 +119,38 @@
   </header>
   <main>
     <div class='row heroImage'>
-      <h1>Fine Dining Delivered</h1>
+      <h1>Fine Dining, Delivered.</h1>
       <h3>PLACE AN ORDER</h3>
-
+    </div>
+    <div class='row features'>
+      <div class ='mybox col-md-2 col-md-offset-3'>
+        <h3>Shop Online</h3>
+        <p>Using our convenient web app, you'll get all the power of gFood without having to call your order in. Order in your pajamas, order 24 hours a day, order on Christmas, we're here to serve you.</p>
+        </div>
+      <div class ='mybox col-md-2'>
+        <h3>Fast Delivery</h3>
+        <p>You've never seen ordering this quick. Our proprietary ordering rocket ship delivery team allows you to spend less time being hungry, and more time doing what matters most to you. We'd ask what that is, but gFood respects your privacy.</p>
+        </div>
+      <div class ='mybox col-md-2'>
+        <h3>Great Deals</h3>
+        <p>Money: You've got it, we want it. But let it never be said we're not incredibly fair! Burger sales? Check. Pizza sales? Check. Burger and pizza sales?? Check, check, check! We seriously can't stop making deals.
+        </p>
+      </div>
     </div>
   </main>
-
+  <footer>
+    <div class ='row firstFoot'>
+      <h3 class ='col-md-2 col-md-offset-3'>Galvanize Delivers</h3>
+      <!-- <p class ='col-md-2 col-md-offset-2'>yoooo</p> -->
+      <ul class = 'col-md-2 col-md-offset-2'>
+        <li>Home</li>
+        <li>Order Delivery</li>
+      </ul>
+      <div class = 'col-md-12 finalFooter'>
+        <small class = 'col-md-3 col-md-offset-3'>&copy; Galvanize Delivers</small>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
