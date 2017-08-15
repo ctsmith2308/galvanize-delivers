@@ -76,7 +76,7 @@
     color: #FF3A73;
   }
 
-  .cardHolder {
+  .mainContent {
     background-color: white;
     height: 623px;
   }
@@ -97,10 +97,18 @@
     background-color: white;
   }
 
-.table{
-  width: 250px;
-  /*margin-left: 35px;*/
-}
+  .table {
+    width: 250px;
+    /*margin-left: 35px;*/
+  }
+
+  .classWithPad{
+    /*margin:10px;*/
+    padding:50px;
+    border:3px solid red;
+    width: 300px;
+
+  }
 </style>
 
 <body class='container-fluid'>
@@ -120,40 +128,178 @@ cart</h3>
       <h1 class='col-md-1 col-md-offset-4'>Order</h1>
     </div>
 
-    <div class='row cardHolder'>
-      <div class ='row topRow'>
-      <div class='col-md-2 col-md-offset-2 card'>
-        <img class="card-img-top burgerInfo" src="./img/burger.jpg" alt="Card image cap">
-        <div class="card-block">
-          <h4 class="card-title">Royal with Cheese</h4>
-          <p class="card-text">$8.99</p>
-          <h5>Place Order</h5>
+    <div class='row mainContent'>
+      <div class="col-md-3 col-md-offset-2">
+        <div class="classWithPad">
+          Set room AC temperature
         </div>
       </div>
-      <div class='col-md-2 card'>
-        <img class="card-img-top burgerInfo" src="./img/burger.jpg" alt="Card image cap">
-        <div class="card-block">
-          <h4 class="card-title">Royal with Cheese</h4>
-          <p class="card-text">$8.99</p>
-          <h5>Place Order</h5>
+    <div class="col-md-3">
+      <div class="classWithPad">
+        Set room heater temperature
+      </div>
+      </div>
+    <div class="col-md-3">
+
+  <table class="col-md-1 table table-striped">
+    <tbody>
+      <tr>
+        <td>1. This</td>
+      </tr>
+      <tr>
+        <td>2. That</td>
+      </tr>
+      <tr>
+        <td>1. This</td>
+      </tr>
+      <tr>
+        <td>2. That</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+
+        <!-- <div class="col-md-1 card">
+          <div class="col-md-2 card">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+
+      <div class="col-md-1 card">
+        <div class="col-md-2 card">
+          <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
         </div>
       </div>
-      <table class="col-md-2 col-md-offset-2 table table-striped">
-        <tbody>
-          <tr>
-            <td>1. This</td>
-          </tr>
-          <tr>
-            <td>2. That</td>
-          </tr>
-      </tbody>
-      </table>
+
+        <table class="col-md-2 col-md-offset-2 table table-striped">
+          <tbody>
+            <tr>
+              <td>1. This</td>
+            </tr>
+            <tr>
+              <td>2. That</td>
+            </tr>
+            <tr>
+              <td>1. This</td>
+            </tr>
+            <tr>
+              <td>2. That</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
-    </div>
+    </div> -->
 
+    <!-- <div class='row cardHolder'>
+      <div class='row topRow'>
+        <div class='col-md-2 col-md-offset-2 card'>
+          <img class="card-img-top burgerInfo" src="./img/burger.jpg" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Royal with Cheese</h4>
+            <p class="card-text">$8.99</p>
+            <h5>Place Order</h5>
+          </div>
+        </div>
+        <div class='col-md-2 card'>
+          <img class="card-img-top burgerInfo" src="./img/burger.jpg" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Royal with Cheese</h4>
+            <p class="card-text">$8.99</p>
+            <h5>Place Order</h5>
+          </div>
+        </div>
+        <table class="col-md-2 col-md-offset-2 table table-striped">
+          <tbody>
+            <tr>
+              <td>1. This</td>
+            </tr>
+            <tr>
+              <td>2. That</td>
+            </tr>
+            <tr>
+              <td>1. This</td>
+            </tr>
+            <tr>
+              <td>2. That</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class='row bottomRow'>
+        <div class='col-md-2 col-md-offset-2 card'>
+          <img class="card-img-top burgerInfo" src="./img/burger.jpg" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Royal with Cheese</h4>
+            <p class="card-text">$8.99</p>
+            <h5>Place Order</h5>
+          </div>
+        </div>
+        <div class='col-md-2 card'>
+          <img class="card-img-top burgerInfo" src="./img/burger.jpg" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Royal with Cheese</h4>
+            <p class="card-text">$8.99</p>
+            <h5>Place Order</h5>
+          </div>
+        </div>
+        <div class=" col-md-3 col-md-offset-2">
+          <table class="table table-user-information">
+            <tbody>
+              <tr>
+                <td>Department:</td>
+                <td>Programming</td>
+              </tr>
+              <tr>
+                <td>Hire date:</td>
+                <td>06/23/2013</td>
+              </tr>
+              <tr>
+                <td>Date of Birth</td>
+                <td>01/24/1988</td>
+              </tr>
 
+              <tr>
+                <tr>
+                  <td>Gender</td>
+                  <td>Female</td>
+                </tr>
+                <tr>
+                  <td>Home Address</td>
+                  <td>Kathmandu,Nepal</td>
+                </tr>
+                <tr>
+                  <td>Email</td>
+                  <td><a href="mailto:info@support.com">info@support.com</a></td>
+                </tr>
+                <td>Phone Number</td>
+                <td>123-4567-890(Landline)<br><br>555-4567-890(Mobile)
+                </td>
 
+              </tr>
+
+            </tbody>
+          </table>
+
+        </div> -->
 
   </main>
   <footer>
