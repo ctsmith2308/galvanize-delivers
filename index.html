@@ -12,12 +12,15 @@
 
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+
+  <script src="https://use.fontawesome.com/5dc522958a.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
 
 <style>
   .navigation {
-    background-color: blue;
+    background-color: #2D77FF;
     color: white;
     height: 75px;
   }
@@ -43,26 +46,30 @@
   }
 
 .heroImage>h1{
+  font-family: 'Roboto' sans-serif;
+  font-weight: bold;
   font-size: 75px;
-  color: red;
+  color: white;
   margin-top: 200px;
 
 }
 .heroImage>h3{
-  background-color: green;
-  color: pink;
-  padding: 3px;
+  background-color: #FF3A73;
+  color: white;
   margin: auto;
-  max-width: 250px;
-  max-height: 100px;
-}
-
-.mybox {
-  border: 1px solid red;
+  padding-top: 18px;
+  width: 200px;
+  height: 50px;
+  font-size: 13px;
 }
 
 .features{
   text-align: center;
+  margin-bottom: 15px;
+}
+
+.features>h3{
+  color: pink
 }
 
 p {
@@ -70,40 +77,34 @@ p {
 }
 
 .firstFoot{
-  background-color: blue;
+  background-color: #2D77FF;
   height: 100px;
 }
 
 .firstFoot>h3{
   color: white;
-  border:2px solid red;
 }
-.firstFoot>h3{
-  /*margin-top: 25px;*/
-  border:2px solid red;
-}
-/*.firstFoot>p{
-  border:2px solid red;
-  margin-top: 25px;
-}*/
+
 
 .firstFoot>ul{
-  border:2px solid red;
   margin-top: 25px;
   list-style-type: none;
   color:white;
 }
 
 .finalFooter{
-  color: red;
-  background-color: black;
+  color: #BDB5BB;
+  background-color: #000C9A;
   height: 45px;
 }
 
 .finalFooter>small{
   margin-top: 15px;
-  /*padding-bottom: 10px;*/
 
+}
+
+.featuresHeading{
+  color:#FF3A73;
 }
 
 </style>
@@ -113,7 +114,8 @@ p {
     <nav class='row'>
       <div class='col-md-12 navigation'>
         <h1>Galvanize Delivers</h1>
-        <h3>Home</h3>
+        <h3><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+cart</h3>
       </div>
     </nav>
   </header>
@@ -123,16 +125,18 @@ p {
       <h3>PLACE AN ORDER</h3>
     </div>
     <div class='row features'>
-      <div class ='mybox col-md-2 col-md-offset-3'>
-        <h3>Shop Online</h3>
+      <div class ='col-md-2 col-md-offset-3'>
+        <h3 class = "featuresHeading"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Shop Online</h3>
         <p>Using our convenient web app, you'll get all the power of gFood without having to call your order in. Order in your pajamas, order 24 hours a day, order on Christmas, we're here to serve you.</p>
         </div>
-      <div class ='mybox col-md-2'>
-        <h3>Fast Delivery</h3>
+      <div class ='col-md-2'>
+        <h3 class ="featuresHeading"><i class="fa fa-truck" aria-hidden="true"></i>
+Fast Delivery</h3>
         <p>You've never seen ordering this quick. Our proprietary ordering rocket ship delivery team allows you to spend less time being hungry, and more time doing what matters most to you. We'd ask what that is, but gFood respects your privacy.</p>
         </div>
-      <div class ='mybox col-md-2'>
-        <h3>Great Deals</h3>
+      <div class ='col-md-2'>
+        <h3 class = "featuresHeading"><i class="fa fa-credit-card" aria-hidden="true"></i>
+Great Deals</h3>
         <p>Money: You've got it, we want it. But let it never be said we're not incredibly fair! Burger sales? Check. Pizza sales? Check. Burger and pizza sales?? Check, check, check! We seriously can't stop making deals.
         </p>
       </div>
