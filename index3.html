@@ -64,7 +64,6 @@
 
   .card-img-top {
     width: inherit;
-
   }
 
   .btn {
@@ -104,21 +103,22 @@
     margin-top: 15px;
   }
 
-  .contentBox{
+  .contentBox {
     height: 100%;
     padding-bottom: 50px;
   }
-  .fa-shopping-cart{
+
+  .fa-shopping-cart {
     padding-right: 10px;
   }
-.fa{
-  font-size: 25px;
-}
 
-.table-striped td:nth-of-type(even){
-  text-align: right;
-}
+  .fa {
+    font-size: 25px;
+  }
 
+  .table-striped td:nth-of-type(even) {
+    text-align: right;
+  }
 </style>
 
 <body class='container-fluid'>
@@ -127,9 +127,8 @@
   <header>
     <div class="row">
       <nav class="col-md-12 fixed-top bg-primary container-fluid">
-        <h2 class="col-md-10 conatiner-fluid mainNav">Galvanize Delivers</h2>
-        <h2 class="col-md-2 col-sm-12 sideNav text-left"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
-            order delivery</h2>
+        <h2 class="col-md-10 mainNav"><a href = "index.html" style = "text-decoration:none; color:white">Galvanize Delivers</h2></a>
+        <h2 class="col-md-2 col-sm-12 sideNav text-left"><a href="index3.html" style="color: white; text-decoration:none"><i class="fa fa-shopping-cart" aria-hidden="true"></i>order delivery</h2></a>
       </nav>
   </header>
 
@@ -182,7 +181,7 @@
 
         </div>
 
-        <div class="row">
+        <!-- <div class="row"> -->
 
           <div class="col-md-3 flex-container margins">
             <table class="table table-striped">
@@ -217,11 +216,11 @@
               </tr>
             </table>
             <div class="col-md-2 col-md-offset-3 col-xs-sm-12 col-xs-offset-3" style="padding-left:30px;">
-              <a href="#" class="btn button3 ">Place Order</a>
+              <a href="#" class="btn button3" data-toggle="modal" data-target="#checkOUT">Place Order</a>
             </div>
 
           </div>
-        </div>
+        <!-- </div> -->
       </div>
 
   </main>
@@ -234,8 +233,8 @@
       </div>
       <div class='col-md-2 col-sm-4 col-xs-6 col-md-offset-2 flex-container'>
         <ul style="list-style-type: none; padding-top: 15px;">
-          <li style='color:white'>Home</li>
-          <li style='color:white'>Order Delivery</li>
+          <li style='color:white'><a href = "index.html" style = "color:white">Home</li></a>
+          <li style='color:white'><a href = "index3.html" style = "color:white">Order Delivery</li></a>
         </ul>
       </div>
     </div>
@@ -245,6 +244,29 @@
       </div>
     </div>
   </footer>
+
+
+
+
+<div class="modal fade" id="checkOUT" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Checkout</h4>
+      </div>
+      <div class="modal-body">
+      <!-- <div class="row">
+
+      </div> -->
+    </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 
 <script>
@@ -262,11 +284,8 @@
     $('.tax').text("Tax " + salesTax.toFixed(2));
     $('.total').text("Total " + totalPrice.toFixed(2));
     var text = $('.card-title1').text()
-    var yup = $('<div>').text(burgerPrice).addClass('text-right');
     var trText = $('<tr></tr>').append('<td>' + text + '</td>').append(
-      // yup
-      '<td>' + burgerPrice + '</td>'
-    )
+      '<td>' + burgerPrice + '</td>')
     $(trText).appendTo('.table-striped');
   })
 
@@ -308,6 +327,17 @@
     var trText = $('<tr></tr>').append('<td>' + text + '</td>').append('<td>' + iceCreamPrice + '</td>')
     $(trText).appendTo('.table-striped');
   })
+
+  $('.button3').click(function() {
+    // $("#modalCart").append($(".margins"));
+    var completeCart = $('.margins').clone();
+    completeCart.removeClass('col-md-3').removeClass('flex-container').removeClass('margins');
+    completeCart.find('a.btn').remove();
+    completeCart.appendTo($('.modal-body'));
+
+  })
+
+
 </script>
 
 </html>
