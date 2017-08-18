@@ -31,7 +31,7 @@
 
 <style>
   .navigation {
-    background-color: #2D77FF;
+    background-color: #337ab7;
     color: white;
     height: 75px;
   }
@@ -46,62 +46,52 @@
     margin-top: 15px;
   }
 
-  .heroImage {
-    background-image: url('./img/hero.jpg');
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 500px;
+  .sideNav {
+    font-size: 15px;
+  }
+
+  .card {
+    margin: 10px;
+    width: 20rem;
     text-align: center;
+    box-shadow: 1px 1px 5px grey;
   }
 
-  .heroImage>h1 {
-    font-family: 'Roboto' sans-serif;
-    font-weight: bold;
-    font-size: 75px;
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card-img-top {
+    width: inherit;
+
+  }
+
+  .btn {
+    color: #FF3A73;
+  }
+
+  .button3 {
     color: white;
-    margin-top: 175px;
-  }
-
-  .heroImage>h3 {
     background-color: #FF3A73;
-    color: white;
-    margin: auto;
-    margin-top: 15px;
-    padding-top: 18px;
-    width: 200px;
-    height: 50px;
-    font-size: 13px;
   }
 
-  .features {
-    text-align: center;
-    margin-bottom: 15px;
+  .card-text {
+    text-align: inherit;
   }
 
-  .features>h3 {
-    color: pink
-  }
-
-  p {
-    text-align: justify;
+  .margins {
+    margin-top: 10px;
   }
 
   .firstFoot {
-    background-color: #2D77FF;
-    height: 100px;
+    background-color: #337ab7;
+    padding-bottom: 25px;
+    height: 100%;
   }
-
-  .firstFoot>h3 {
-    color: white;
-  }
-
 
   .firstFoot>ul {
     margin-top: 25px;
-    list-style-type: none;
-    color: white;
   }
 
   .finalFooter {
@@ -114,177 +104,137 @@
     margin-top: 15px;
   }
 
-  .featuresHeading {
-    color: #FF3A73;
+  .contentBox{
+    height: 100%;
+    padding-bottom: 50px;
   }
 
-  .sideNav {
-    font-size: 15px;
-  }
-
-  .card {
-    margin: 10px;
-    width: 20rem;
-    text-align: center;
-    box-shadow: 1px 1px 5px grey;
-
-  }
-
-  .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .card-img-top {
-    width: inherit;
-  }
-
-  /*.form-control {
-    display: inline-block;
-    width: 92%;
-  }
-  .fa-user{
-    padding-right: 16px;
-    font-size: 25px;
-    margin: auto;
-  }*/
-
-  .btn{
-    color: #FF3A73;
-  }
-
-  .button3 {
-    color:white;
-    background-color: #FF3A73;
-  }
-
-  .card-text{
-    text-align: inherit;
-  }
-
-  .margins{
-    margin-top: 10px;
-  }
 </style>
 
-<header>
-
-  <div class="row">
-    <nav class="col-md-12 fixed-top bg-primary container-fluid">
-      <h2 class="col-md-10 mainNav">Galvanize Delivers</h2>
-      <h2 class="col-md-2 sideNav text-center"><i class="fa fa-shopping-cart" aria-hidden="true"></i>order delivery</h2>
-    </nav>
-
-</header>
+<body class='container-fluid'>
 
 
-<main>
-  <div class="container-fluid">
+  <header>
     <div class="row">
-    <h1 class="col-md-4 col-md-offset-2">Menu</h1>
-    <h1 class="col-md-3">Order</h1>
-    </div>
+      <nav class="col-md-12 fixed-top bg-primary container-fluid">
+        <h2 class="col-md-10 conatiner-fluid mainNav">Galvanize Delivers</h2>
+        <h2 class="col-md-2 col-sm-12 sideNav text-left"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            order delivery</h2>
+      </nav>
+  </header>
 
-    <div class="row">
-
-      <div class="col-md-4 col-md-offset-2 flex-container">
-
-        <div class="card ">
-          <img class="card-img-top" src="img/burger.jpg" alt="Card image cap">
-          <div class="card-block">
-            <h4 class="card-title1">Royale with Cheese</h4>
-            <p class="card-text">$8.99</p>
-            <a href="#" data-value="8.99" class="btn burgerButton">Add to order</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <img class="card-img-top" src="img/pizza.jpg" alt="Card image cap">
-          <div class="card-block">
-            <h4 class="card-title2">Arugula Pizza</h4>
-            <p class="card-text">$11.99</p>
-            <a href="#" data-value="11.99" class="btn pizzaButton">Add to order</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <img class="card-img-top" src="img/ribs.jpg" alt="Card image cap">
-          <div class="card-block">
-            <h4 class="card-title3">Smoked Swine</h4>
-            <p class="card-text">$14.99</p>
-            <a href="#" data-value="14.99" class="btn  ribsButton">Add to order</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <img class="card-img-top" src="img/ice_cream.jpg" alt="Card image cap">
-          <div class="card-block">
-            <h4 class="card-title4">Ice Cream Biscuit</h4>
-            <p class="card-text">$7.99</p>
-            <a href="#" data-value="7.99" class="btn iceCreamButton ">Add to order</a>
-          </div>
-        </div>
-
+  <main>
+    <div class="container-fluid">
+      <div class="row">
+        <h1 class="col-md-4 col-md-offset-2">Menu</h1>
+        <h1 class="col-md-3">Order</h1>
       </div>
 
-  <!-- <div class='row'>
-  <div class="col-md-3 flex-container"> -->
+      <div class="row contentBox">
 
+        <div class="col-md-4 col-md-offset-2 col-xs-10 col-xs-offset-2 flex-container">
+
+          <div class="card ">
+            <img class="card-img-top" src="img/burger.jpg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title1">Royale with Cheese</h4>
+              <p class="card-text">$8.99</p>
+              <a href="#" data-value="8.99" class="btn burgerButton">Add to order</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="card-img-top" src="img/pizza.jpg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title2">Arugula Pizza</h4>
+              <p class="card-text">$11.99</p>
+              <a href="#" data-value="11.99" class="btn pizzaButton">Add to order</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="card-img-top" src="img/ribs.jpg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title3">Smoked Swine</h4>
+              <p class="card-text">$14.99</p>
+              <a href="#" data-value="14.99" class="btn  ribsButton">Add to order</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="card-img-top" src="img/ice_cream.jpg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title4">Ice Cream Biscuit</h4>
+              <p class="card-text">$7.99</p>
+              <a href="#" data-value="7.99" class="btn iceCreamButton ">Add to order</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col-md-3 flex-container margins">
+            <table class="table table-striped">
+              <tr>
+                <td><strong>Item</strong></td>
+                <td class="text-right"><strong>Price</strong></td>
+              </tr>
+            </table>
+            <table class="table">
+              <tr>
+                <td class='subtotal text-right'><strong>Subtotal</strong></td>
+              </tr>
+              <tr>
+                <td class='tax text-right'><strong>Tax</strong></td>
+              </tr>
+              <tr>
+                <td class='total text-right'><strong>Total</strong></td>
+              </tr>
+
+            </table>
+
+
+            <table class="table table-condensed">
+              <tr>
+                <td><i class="fa fa-user" aria-hidden="true"></i><input type="text" class="form-control" placeholder="Name"></td>
+              </tr>
+              <tr>
+                <td><i class="fa fa-phone-square" aria-hidden="true"></i><input type="text" class="form-control" placeholder="Phone"></td>
+              </tr>
+              <tr>
+                <td><i class="fa fa-address-card" aria-hidden="true"></i><input type="text" class="form-control" placeholder="Address"></td>
+              </tr>
+            </table>
+            <div class="col-md-2 col-md-offset-3 col-xs-sm-12 col-xs-offset-3" style="padding-left:30px;">
+              <a href="#" class="btn button3 ">Place Order</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+  </main>
+
+  <footer>
+    <div class='row firstFoot'>
+      <div class='col-md-2 col-sm-4 col-xs-5 col-md-offset-3 flex-container'>
+        <h3 style='color:white'>Galvanize Delivers</h3>
+        <h5 style='color:white'>Fine Dining Delivered.</h5>
+      </div>
+      <div class='col-md-2 col-sm-4 col-xs-6 col-md-offset-2 flex-container'>
+        <ul style="list-style-type: none; padding-top: 15px;">
+          <li style='color:white'>Home</li>
+          <li style='color:white'>Order Delivery</li>
+        </ul>
+      </div>
+    </div>
     <div class="row">
-
-      <div class="col-md-3 flex-container margins">
-    <table class="table table-striped">
-      <tr>
-        <td><strong>Item</strong></td>
-        <td class="text-right"><strong>Price</strong></td>
-      </tr>
-    </table>
-    <table class="table">
-      <tr>
-        <td class='subtotal text-right'><strong>Subtotal</strong></td>
-      </tr>
-      <tr>
-        <td class='tax text-right'><strong>Tax</strong></td>
-      </tr>
-      <tr>
-        <td class='total text-right'><strong>Total</strong></td>
-      </tr>
-
-    </table>
-
-
-    <table class="table table-condensed">
-      <tr>
-        <td><i class="fa fa-user" aria-hidden="true"></i><input type="text" class="form-control" placeholder="Name"></td>
-      </tr>
-      <tr>
-        <td><i class="fa fa-phone-square" aria-hidden="true"></i><input type="text" class="form-control" placeholder="Phone"></td>
-      </tr>
-      <tr>
-        <td><i class="fa fa-address-card" aria-hidden="true"></i><input type="text" class="form-control" placeholder="Address"></td>
-      </tr>
-    </table>
-    <div class="col-md-2 col-md-offset-4">
-      <a href="#" class="btn button3 ">Place Order</a>
+      <div class='finalFooter container-fluid' style="padding-top: 10px;">
+        <small class="col-md-offset-3">&copy; Galvanize Delivers</small>
+      </div>
     </div>
-
-  </div>
-</div>
-
-</main>
-
-<footer>
-  <div class='row firstFoot'>
-    <h3 class='col-md-2 col-md-offset-3'>Galvanize Delivers</h3>
-    <ul class='col-md-2 col-md-offset-2'>
-      <li>Home</li>
-      <li>Order Delivery</li>
-    </ul>
-    <div class='col-md-12 finalFooter container-fluid'>
-      <small class='col-md-3 col-md-offset-3'>&copy; Galvanize Delivers</small>
-    </div>
-  </div>
-</footer>
+  </footer>
 </body>
 
 <script>
@@ -293,17 +243,14 @@
   let salesTax = 0
   let totalPrice = 0
 
-  // let price = fixedNum.toFixed(2)
-
   $(".burgerButton").click(function() {
     var burgerPrice = $(this).data('value');
     subtotal += $(this).data('value')
-    salesTax = subtotal*salesTaxPercent;
+    salesTax = subtotal * salesTaxPercent;
     totalPrice = subtotal + salesTax;
     $('.subtotal').text("Subtotal " + subtotal.toFixed(2));
     $('.tax').text("Tax " + salesTax.toFixed(2));
     $('.total').text("Total " + totalPrice.toFixed(2));
-
     var text = $('.card-title1').text()
     var trText = $('<tr></tr>').append('<td>' + text + '</td>').append('<td>' + burgerPrice + '</td>')
     $(trText).appendTo('.table-striped');
@@ -312,7 +259,7 @@
   $(".pizzaButton").click(function() {
     var pizzaPrice = $(this).data('value');
     subtotal += $(this).data('value')
-    salesTax = subtotal*salesTaxPercent;
+    salesTax = subtotal * salesTaxPercent;
     totalPrice = subtotal + salesTax;
     $('.subtotal').text("Subtotal " + subtotal.toFixed(2));
     $('.tax').text("Tax " + salesTax.toFixed(2));
@@ -325,7 +272,7 @@
   $(".ribsButton").click(function() {
     var swinePrice = $(this).data('value');
     subtotal += $(this).data('value')
-    salesTax = subtotal*salesTaxPercent;
+    salesTax = subtotal * salesTaxPercent;
     totalPrice = subtotal + salesTax;
     $('.subtotal').text("Subtotal " + subtotal.toFixed(2));
     $('.tax').text("Tax " + salesTax.toFixed(2));
@@ -338,7 +285,7 @@
   $(".iceCreamButton").click(function() {
     var iceCreamPrice = $(this).data('value');
     subtotal += $(this).data('value')
-    salesTax = subtotal*salesTaxPercent;
+    salesTax = subtotal * salesTaxPercent;
     totalPrice = subtotal + salesTax;
     $('.subtotal').text("Subtotal " + subtotal.toFixed(2));
     $('.tax').text("Tax " + salesTax.toFixed(2));
