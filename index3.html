@@ -108,6 +108,16 @@
     height: 100%;
     padding-bottom: 50px;
   }
+  .fa-shopping-cart{
+    padding-right: 10px;
+  }
+.fa{
+  font-size: 25px;
+}
+
+.table-striped td:nth-of-type(even){
+  text-align: right;
+}
 
 </style>
 
@@ -252,7 +262,11 @@
     $('.tax').text("Tax " + salesTax.toFixed(2));
     $('.total').text("Total " + totalPrice.toFixed(2));
     var text = $('.card-title1').text()
-    var trText = $('<tr></tr>').append('<td>' + text + '</td>').append('<td>' + burgerPrice + '</td>')
+    var yup = $('<div>').text(burgerPrice).addClass('text-right');
+    var trText = $('<tr></tr>').append('<td>' + text + '</td>').append(
+      // yup
+      '<td>' + burgerPrice + '</td>'
+    )
     $(trText).appendTo('.table-striped');
   })
 
